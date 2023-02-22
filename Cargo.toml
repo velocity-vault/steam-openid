@@ -2,6 +2,9 @@
 name = "steam-openid"
 version = "0.1.0"
 edition = "2021"
+license-file = "LICENSE"
+description = "Simple Rust implementation of Steam OpenID."
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
