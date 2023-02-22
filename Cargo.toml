@@ -1,5 +1,5 @@
 [package]
-name = "steam-auth"
+name = "steam-openid"
 version = "0.1.0"
 edition = "2021"
 
