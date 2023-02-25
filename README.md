@@ -4,9 +4,11 @@ This is a simple implementation of OpenID for Steam authorization used by Veloci
 
 ## How to
 ```Rust
+let openid = SteamOpenId::new("http://localhost:8080", "/callback").unwrap();
+
 // Redirect the user to this url:
-let redirect_url = steam_openid::redirect("http://localhost:8080", "http://localhost:8080/callback");
+let redirect_url = openid.get_redirect_url();
 
 // Then in your callback:
-let steamid64 = steam_openid::verify(req.query_string()).unwrap();
+let steamid64 = openid.verify(req.query_string()).unwrap();
 ```
